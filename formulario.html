@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registro Torneo</title>
+</head>
+<body>
+  <h2>Registro Torneo</h2>
+  <form>
+    <table border="1">
+      <tr>
+        <td>Nombre del jugador:</td>
+        <td><input type="text" name="nombre" required minlength="3" maxlength="15"></td>
+      </tr>
+      <tr>
+        <td>Correo:</td>
+        <td><input type="email" name="correo" required></td>
+      </tr>
+      <tr>
+        <td>Edad:</td>
+        <td><input type="number" name="edad" required min="12" max="40"></td>
+      </tr>
+      <tr>
+        <td>Nickname:</td>
+        <td><input type="text" name="nick" pattern="[A-Za-z0-9]+" required></td>
+      </tr>
+      <tr>
+        <td>Categoría:</td>
+        <td>
+          <input type="radio" name="categoria" value="Principiante" required> Principiante
+          <input type="radio" name="categoria" value="Intermedio"> Intermedio
+          <input type="radio" name="categoria" value="Experto"> Experto
+        </td>
+      </tr>
+      <tr>
+        <td>Juegos favoritos:</td>
+        <td>
+          <input type="checkbox" name="juegos" value="FIFA"> FIFA
+          <input type="checkbox" name="juegos" value="LoL"> LoL
+          <input type="checkbox" name="juegos" value="Minecraft"> Minecraft
+        </td>
+      </tr>
+      <tr>
+        <td>Fecha inscripción:</td>
+        <td><input type="date" name="fecha" min="2025-01-01" max="2025-12-31" required></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Restablecer">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
